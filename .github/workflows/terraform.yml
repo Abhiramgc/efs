@@ -21,10 +21,10 @@ jobs:
         id: init
         run: terraform init
 
-      - name: Terraform Plan
-        id: plan
+      - name: Terraform destroy
+        id: destroy
         if: github.event_name == 'push'
-        run: terraform plan -no-color
+        run: terraform destroy -auto-approve -no-color
         
       - name: Terraform Apply
         id: apply
