@@ -7,5 +7,7 @@ resource "aws_instance" "testinstance" {
     key_name="demo1"
     tags= {
         Name = "testinstance"
+        Owner = "Abhiram"
+        os = "Linux"
     }
 }
