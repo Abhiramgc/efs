@@ -1,3 +1,4 @@
+# provider details
 terraform {
    
   required_providers {
